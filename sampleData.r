@@ -552,7 +552,7 @@ gdat[,"method"] <- factor(gdat[,"method"], levels=c("lm", "biglm", "bigglm", "bi
                                                     "speedlm", "lfe", "feXTX"))
 
 # plot
-# two plots:  pver=1 for one for less efficient methods, pver=2 one for lfe and feXTX
+# two plots:  pver=1 for less efficient methods, pver=2 for lfe() and feXTX()
 pver <- 2
 if(pver==1) {
   k <- which(gdat[,"n"]<=1500000)
